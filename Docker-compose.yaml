@@ -40,3 +40,6 @@ services:
     depends_on:
     - catalogue
     - user
+
+
+#validating this file
