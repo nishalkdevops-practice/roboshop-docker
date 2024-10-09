@@ -1,26 +1,22 @@
 networks: 
   roboshop: 
     driver: bridge
-
 services: 
   mongodb: 
     image: mongodb:v1
     container_name: mongodb
     networks: 
     - roboshop
-
   catalogue: 
     image: catalogue:v1
     container_name: catalogue
     networks: 
     - roboshop
-
   redis: 
     image: redis:v1
     container_name: redis
     networks: 
     - roboshop
-
   user: 
     image: user:v1
     container_name: user
@@ -29,7 +25,6 @@ services:
     depends_on:
     - mongodb
     - redis
-
   web:    
     image: web:v1
     container_name: web
@@ -42,4 +37,4 @@ services:
     - user
 
 
-#validating this file and this 
+#validating this file and thishh 
