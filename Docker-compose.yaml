@@ -30,7 +30,6 @@ services:
     - mongodb
     - redis
 
-
   web: 
     image: web:v1
     container_name: web
